@@ -11,7 +11,8 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     // Accessibility addon
-    "@storybook/addon-a11y"
+    "@storybook/addon-a11y",
+    "storybook-addon-designs"
   ],
   async viteFinal(config, { configType }) {
     const { config: userConfig } = await loadConfigFromFile(
