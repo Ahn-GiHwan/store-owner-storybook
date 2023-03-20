@@ -1,0 +1,55 @@
+mutation prepareOrderForNotification($conditions: PrepareOrderConditions!) {
+  prepareOrderForNotification(conditions: $conditions) {
+    isSuccess
+    reason
+    order {
+      orderId
+      orderAgencyId
+      orderAgencyOrderId
+      orderAgencyDailyOrderId
+      status
+      actualPayPrice
+      prepaidPrice
+      totalPayPrice
+      prepaidMethod
+      paymentCardPrice
+      paymentCashPrice
+      taxFreePayPrice
+      orderAgencyStoreId
+      storeId
+      ordererName
+      ordererPhone
+      receiverName
+      receiverPhone
+      storeOrderMemo
+      ordererOrderMemo
+      dropLocation {
+        latitude
+        longitude
+      }
+      dropJibunAddress
+      dropRoadAddress
+      dropAddressDetail
+      cancelReason
+      cancelType
+      orderType
+      serveType
+      orderChannel
+      pickupWishAt
+      dropWishAt
+      storeDropExpectedAt
+      isReservation
+      isUntact
+      isMasked
+      orderAgencyOrderCreatedAt
+      manageOrderAgencyId
+      createdAt
+      updatedAt
+      orderPreparedNotificationHistories {
+        orderPreparedNotificationHistoryId
+        orderId
+        createdAt
+      }
+    }
+  }
+}

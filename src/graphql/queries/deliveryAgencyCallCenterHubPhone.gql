@@ -1,0 +1,5 @@
+query deliveryAgencyCallCenterHubPhone($conditions: DeliveryAgencyCallCenterHubPhoneConditions!) {
+  deliveryAgencyCallCenterHubPhone(conditions: $conditions) {
+    callCenterHubPhone
+  }
+}

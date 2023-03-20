@@ -1,0 +1,50 @@
+mutation updateDeliveryStatus($input: DeliveryStatusUpdateInput!) {
+  updateDeliveryStatus(input: $input) {
+    deliveryId
+    orderId
+    deliveryAgencyId
+    deliveryAgencyDeliveryId
+    deliveryAgencyStoreId
+    deliveryType
+    status
+    hubPhone
+    driverPhone
+    driverName
+    pickupExpectedAt
+    dropExpectedAt
+    deliveryDistance
+    delayTime
+    totalDeliveryPrice
+    deliveryPrice
+    VATPrice
+    totalExtraCharge
+    extraCharges {
+      dataType
+      type
+      charge
+    }
+    totalPayPrice
+    actualPayPrice
+    prepaidPrice
+    paymentCardPrice
+    paymentCashPrice
+    taxFreePayPrice
+    cancelReason
+    cancelType
+    dropImageUrl
+    parentDeliveryId
+    additionType
+    additionReason
+    createType
+    createdAt
+    updatedAt
+    deliveryStatuses {
+      deliveryStatusId
+      deliveryId
+      status
+      createdAt
+      updatedAt
+      changedAt
+    }
+  }
+}

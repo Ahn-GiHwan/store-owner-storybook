@@ -1,0 +1,94 @@
+query orders($conditions: OrdersConditions!) {
+  orders(conditions: $conditions) {
+    orderId
+    orderAgencyId
+    orderAgencyDailyOrderId
+    orderType
+    serveType
+    status
+    storeId
+    actualPayPrice
+    totalPayPrice
+    prepaidPrice
+    paymentCardPrice
+    paymentCashPrice
+    ordererPhone
+    receiverPhone
+    storeOrderMemo
+    ordererOrderMemo
+    dropRoadAddress
+    dropJibunAddress
+    dropAddressDetail
+    cancelReason
+    orderChannel
+    pickupWishAt
+    dropWishAt
+    storeDropExpectedAt
+    createdAt
+    isUntact
+    isReservation
+    orderProducts {
+      orderProductId
+      name
+      totalPrice
+      unitPrice
+      quantity
+      type
+      storeProductId
+    }
+    deliveries {
+      deliveryId
+      parentDeliveryId
+      deliveryAgencyId
+      status
+      deliveryType
+      deliveryPrice
+      driverName
+      driverPhone
+      deliveryAgencyStoreId
+      deliveryDistance
+      delayTime
+      totalDeliveryPrice
+      VATPrice
+      totalExtraCharge
+      extraCharges {
+        type
+        charge
+      }
+      cancelReason
+      cancelType
+      pickupExpectedAt
+      additionType
+      additionReason
+      createType
+      createdAt
+      updatedAt
+    }
+    orderDropAddress {
+      orderDropAddressId
+      orderId
+      location {
+        latitude
+        longitude
+      }
+      siDo
+      siGunGu
+      eupMyeonDong
+      mainLandNumber
+      subLandNumber
+      roadName
+      mainBuildingNumber
+      subBuildingNumber
+      buildingName
+    }
+    reorderRelation {
+      orderId
+      parentOrderId
+      reorderType
+    }
+    orderPreparedNotificationHistories {
+      orderPreparedNotificationHistoryId
+      createdAt
+    }
+  }
+}

@@ -1,0 +1,8 @@
+fragment orderStatus on OrderStatus {
+  orderStatusId
+  orderId
+  status
+  createdAt
+  updatedAt
+  changedAt
+}

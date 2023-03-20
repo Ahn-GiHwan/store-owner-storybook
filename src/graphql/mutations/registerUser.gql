@@ -1,0 +1,15 @@
+mutation registerUser($data: RegisterUserData!) {
+  registerUser(data: $data) {
+    userId
+    loginId
+    name
+    phone
+    role
+    userTermsAgreements {
+      termsAndPolicyType
+      isAgree
+      createdAt
+      responseMethod
+    }
+  }
+}

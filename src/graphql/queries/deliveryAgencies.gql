@@ -1,0 +1,9 @@
+query deliveryAgencies {
+  deliveryAgencies {
+    deliveryAgencyId
+    deliveryAgencyName
+    deliveryAgencyPhone
+    createdAt
+    updatedAt
+  }
+}

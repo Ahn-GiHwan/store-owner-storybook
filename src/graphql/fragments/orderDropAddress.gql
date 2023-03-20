@@ -1,0 +1,18 @@
+fragment orderDropAddress on OrderDropAddress {
+  orderDropAddressId
+  orderId
+  location {
+    latitude
+    longitude
+  }
+  siDo
+  siGunGu
+  eupMyeonDong
+  ri
+  mainLandNumber
+  subLandNumber
+  roadName
+  mainBuildingNumber
+  subBuildingNumber
+  buildingName
+}

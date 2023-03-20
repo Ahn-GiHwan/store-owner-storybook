@@ -1,0 +1,26 @@
+.error-view-container {
+  min-width: 360px;
+  height: 100vh;
+  background: $color-gray-f5;
+
+  .error-image {
+    width: 172px;
+  }
+
+  .wrap-error-text {
+    color: $color-gray-61;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .help-call-message {
+    color: $color-gray-61;
+
+    > a {
+      text-decoration: none;
+      color: $color-gray-61;
+    }
+  }
+}

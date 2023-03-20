@@ -1,0 +1,40 @@
+query storeProducts($where: StoreProductsCondition, $orderOption: [[String]]) {
+  storeProducts(where: $where, orderOption: $orderOption) {
+    storeProductId
+    storeId
+    categoryId
+    name
+    price
+    type
+    createdAt
+    updatedAt
+    storeProductOptionMappings {
+      storeProductOptionMappingId
+      storeProductOptionId
+      storeProductId
+      storeProductOptions {
+        storeProductOptionId
+        storeId
+        name
+        price
+        createdAt
+        updatedAt
+      }
+    }
+    storeProductGroupMappings {
+      storeProductGroupMappingId
+      storeProductGroupId
+      storeProductId
+      sort
+      storeProductGroups {
+        storeProductGroupId
+        storeId
+        name
+        sort
+        isDefault
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}

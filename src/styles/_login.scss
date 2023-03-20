@@ -1,0 +1,70 @@
+@import '@/styles/common/form.scss';
+@import '@/styles/common/button.scss';
+
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{960px - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 960px) {
+    @content;
+  }
+}
+
+.v-main {
+  background: white;
+  
+}
+
+.v-container {
+  max-width: 960px;
+}
+
+.error-message-password {
+  line-height: 18px;
+  color: #e53935;
+  & p {
+    font-size: 1.2rem;
+  }
+}
+.help {
+  font-size: 1.2rem;
+  line-height: 18px;
+  color: #616161;
+  & a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #616161;
+  }
+}
+
+@include tablet {
+  .login {
+    margin-right: 4rem;
+    max-width: 36rem;
+    margin-left: 4rem;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('@/assets/images/login/login_bg_tablet.png') no-repeat left;
+  }
+}
+
+@include mobile {
+  .login {
+    position: absolute;
+    top: 5rem;
+    outline: none;
+    left: 1.6rem;
+    right: 1.6rem;
+  }
+  .wrapper {
+    width: 100vw;
+    height: 26.8rem;
+    background: url('@/assets/images/login/login_bg_mobile.png') no-repeat;
+    background-size: cover;
+  }
+}

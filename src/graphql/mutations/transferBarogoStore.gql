@@ -1,0 +1,25 @@
+mutation transferBarogoStore($conditions: TransferBarogoStoreConditions!) {
+  transferBarogoStore(conditions: $conditions) {
+    storeId
+    storeType
+    name
+    phone
+    ownerPhone
+    jibunAddress
+    roadAddress
+    detailAddress
+    location {
+      latitude
+      longitude
+    }
+    productPrepareTime
+    ownerName
+    businessNumber
+    status
+    isDeliveryPossible
+    manageOrderAgencyId
+    countryOfOrigin
+    createdAt
+    updatedAt
+  }
+}

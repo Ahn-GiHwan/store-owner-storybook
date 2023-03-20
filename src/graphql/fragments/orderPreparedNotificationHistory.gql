@@ -1,0 +1,5 @@
+fragment orderPreparedNotificationHistory on OrderPreparedNotificationHistory {
+  orderPreparedNotificationHistoryId
+  orderId
+  createdAt
+}

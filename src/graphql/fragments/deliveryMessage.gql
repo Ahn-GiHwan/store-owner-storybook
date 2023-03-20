@@ -1,0 +1,9 @@
+fragment deliveryMessage on DeliveryMessage {
+  deliveryMessageId
+  deliveryId
+  riderId
+  sender
+  message
+  createdAt
+  updatedAt
+}

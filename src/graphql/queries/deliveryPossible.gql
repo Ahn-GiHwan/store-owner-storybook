@@ -1,0 +1,21 @@
+query deliveryPossible($conditions: DeliveryPossibleConditions!) {
+  deliveryPossible(conditions: $conditions) {
+    deliveryAgencyId
+    isPossible
+    reason
+    deliveryDistance
+    totalDeliveryPrice
+    deliveryPrice
+    totalExtraCharge
+    delayTime
+    pickupMinimumAt
+    pickupExpectedAt
+    VATPrice
+    dropExpectedAt
+    extraCharges {
+      dataType
+      type
+      charge
+    }
+  }
+}

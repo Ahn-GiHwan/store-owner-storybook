@@ -1,0 +1,8 @@
+mutation updateUserAgreements($data: [UpdateUserAgreementsData!]!) {
+  updateUserAgreements(data: $data) {
+    termsAndPolicyType
+    isAgree
+    createdAt
+    responseMethod
+  }
+}

@@ -1,0 +1,52 @@
+query storeUsers($where: StoreUsersCondition, $orderOption: [[String]]) {
+  storeUsers(where: $where, orderOption: $orderOption) {
+    userId
+    storeId
+    status
+    createdAt
+    updatedAt
+    store {
+      storeId
+      storeType
+      name
+      phone
+      ownerPhone
+      jibunAddress
+      roadAddress
+      detailAddress
+      location {
+        latitude
+        longitude
+      }
+      productPrepareTime
+      ownerName
+      businessNumber
+      status
+      isTaxFreePayPriceApplied
+      isDeliveryPossible
+      manageOrderAgencyId
+      countryOfOrigin
+      isTaxFreePayPriceApplied
+      createdAt
+      updatedAt
+      orderAgencyStores {
+        orderAgencyStoreId
+        orderAgencyId
+        storeId
+        orderAgencyStoreName
+        isOpened
+        mappingStatus
+        createdAt
+        updatedAt
+      }
+      deliveryAgencyStores {
+        deliveryAgencyStoreId
+        deliveryAgencyId
+        storeId
+        mappingStatus
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}

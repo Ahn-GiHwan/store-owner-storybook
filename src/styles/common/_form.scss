@@ -1,0 +1,53 @@
+/* >>>>>>>>>> 체크박스 >>>>>>>>>> */
+// 체크박스 라벨 속성
+:deep(.v-selection-control) .v-label {
+  opacity: 1;
+  font-size: $font-size-body;
+  color: #000000;
+}
+
+// 텍스트 필드 라벨 속성
+:deep(.v-field-label) {
+  opacity: 1;
+  font-size: $font-size-body;
+  color: $color-gray-bd;
+}
+
+// 체크박스, 라벨 라인 정렬
+:deep(.v-selection-control__input) {
+  margin-top: 2px;
+}
+
+// 체크박스 영역 높이
+:deep(.v-checkbox .v-selection-control) {
+  height: 4.6rem;
+}
+/* <<<<<<<<<< 체크박스 <<<<<<<<<< */
+
+/* >>>>>>>>>> 텍스트필드 >>>>>>>>>> */
+// 유효성 체크 에러 메시지 여백 삭제
+:deep(.v-input__details) {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+:deep(.v-text-field .v-input__details) {
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
+// 유효성 체크 에러 메시지 폰트 사이즈
+:deep(.v-messages__message) {
+  font-size: $font-size-xs;
+}
+
+// 텍스트필드 input inner 버튼
+:deep(.v-field__append-inner) {
+  padding: 0;
+  align-items: center;
+}
+
+// 텍스트필드 append 버튼
+:deep(.v-input__append) {
+  padding: 0;
+  margin-left: 0.8rem;
+}
+/* <<<<<<<<<< 텍스트필드 <<<<<<<<<< */

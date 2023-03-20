@@ -1,0 +1,6 @@
+query findLoginId($conditions: FindLoginIdConditions!) {
+  findLoginId(conditions: $conditions) {
+    loginId
+    lastLoginAt
+  }
+}

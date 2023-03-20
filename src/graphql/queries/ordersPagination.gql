@@ -1,0 +1,111 @@
+query ordersPagination($conditions: OrdersPaginationConditions!) {
+  ordersPagination(conditions: $conditions) {
+    rows {
+      orderId
+      orderAgencyId
+      orderAgencyDailyOrderId
+      orderType
+      serveType
+      status
+      actualPayPrice
+      totalPayPrice
+      paymentCardPrice
+      paymentCashPrice
+      prepaidPrice
+      ordererName
+      ordererPhone
+      storeOrderMemo
+      ordererOrderMemo
+      dropRoadAddress
+      dropJibunAddress
+      dropAddressDetail
+      orderChannel
+      pickupWishAt
+      dropWishAt
+      storeDropExpectedAt
+      createdAt
+      isUntact
+      isMasked
+      isReservation
+      orderProducts {
+        orderProductId
+        name
+        totalPrice
+        unitPrice
+        quantity
+        type
+      }
+      deliveries {
+        deliveryId
+        parentDeliveryId
+        deliveryAgencyId
+        status
+        deliveryType
+        totalDeliveryPrice
+        deliveryPrice
+        VATPrice
+        driverPhone
+        hubPhone
+        cancelReason
+        additionType
+        additionReason
+        createType
+        pickupExpectedAt
+        totalPayPrice
+        actualPayPrice
+        prepaidPrice
+        paymentCardPrice
+        paymentCashPrice
+        createdAt
+        updatedAt
+      }
+      orderDropAddress {
+        orderDropAddressId
+        orderId
+        location {
+          latitude
+          longitude
+        }
+        siDo
+        siGunGu
+        eupMyeonDong
+        ri
+        mainLandNumber
+        subLandNumber
+        roadName
+        mainBuildingNumber
+        subBuildingNumber
+        buildingName
+      }
+      reorderRelation {
+        orderId
+        parentOrderId
+        reorderType
+        reorderReason
+        createdAt
+        updatedAt
+      }
+      payments {
+        paymentId
+        orderId
+        storeId
+        deliveryAgencyId
+        deliveryId
+        paymentMethod
+        cardCompany
+        cardNumber
+        vanCompany
+        approvalNumber
+        approvalAt
+        instalment
+        charge
+        canceledAt
+        cancelReason
+        isCanceled
+        createdAt
+        updatedAt
+      }
+    }
+    count
+  }
+}

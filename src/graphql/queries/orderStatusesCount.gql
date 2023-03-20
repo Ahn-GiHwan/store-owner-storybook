@@ -1,0 +1,6 @@
+query orderStatusesCount($conditions: OrderStatusesCountConditions!) {
+  orderStatusesCount(conditions: $conditions) {
+    status
+    count
+  }
+}

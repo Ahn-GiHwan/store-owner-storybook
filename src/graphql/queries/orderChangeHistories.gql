@@ -1,0 +1,14 @@
+query orderChangeHistories($conditions: OrderChangeHistoriesConditions!) {
+  orderChangeHistories(conditions: $conditions) {
+    eventName
+    editorType
+    editorName
+    orderAgencyId
+    deliveryAgencyId
+    orderId
+    deliveryId
+    before
+    after
+    createdAt
+  }
+}

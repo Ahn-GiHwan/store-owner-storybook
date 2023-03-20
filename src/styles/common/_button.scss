@@ -1,0 +1,10 @@
+:deep(.v-btn) {
+  height: $button-size-medium;
+}
+
+:deep(.v-btn--disabled.v-btn--variant-elevated) {
+  color: #eeeeee;
+  & .v-btn__content {
+    color: #bdbdbd;
+  }
+}

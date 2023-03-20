@@ -1,0 +1,13 @@
+query storeDeposit($storeId: Int!, $deliveryAgencyId: String) {
+  storeDeposit(storeId: $storeId, deliveryAgencyId: $deliveryAgencyId) {
+    deliveryAgencyId
+    deposit
+    bank
+    accountNumber
+    depositor
+    error {
+      errorCode
+      message
+    }
+  }
+}

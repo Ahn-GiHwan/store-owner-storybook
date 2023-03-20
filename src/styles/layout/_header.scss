@@ -1,0 +1,13 @@
+header {
+  text-align: -webkit-center;
+  :deep(.v-icon--size-default) {
+    font-size: 2.4rem;
+  }
+  :deep(.v-toolbar-title__placeholder) {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+  }
+
+}

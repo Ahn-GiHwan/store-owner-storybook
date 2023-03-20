@@ -1,0 +1,8 @@
+fragment deliveryStatus on DeliveryStatus {
+  deliveryStatusId
+  deliveryId
+  status
+  createdAt
+  updatedAt
+  changedAt
+}

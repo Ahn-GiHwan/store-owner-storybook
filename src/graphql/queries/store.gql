@@ -1,0 +1,44 @@
+query store($conditions: StoreConditions!) {
+  store(conditions: $conditions) {
+    storeId
+    storeType
+    name
+    phone
+    ownerPhone
+    jibunAddress
+    roadAddress
+    detailAddress
+    location {
+      latitude
+      longitude
+    }
+    productPrepareTime
+    ownerName
+    businessNumber
+    status
+    isTaxFreePayPriceApplied
+    isDeliveryPossible
+    manageOrderAgencyId
+    countryOfOrigin
+    createdAt
+    updatedAt
+    orderAgencyStores {
+      orderAgencyStoreId
+      orderAgencyId
+      storeId
+      orderAgencyStoreName
+      isOpened
+      mappingStatus
+      createdAt
+      updatedAt
+    }
+    deliveryAgencyStores {
+      deliveryAgencyStoreId
+      deliveryAgencyId
+      storeId
+      mappingStatus
+      createdAt
+      updatedAt
+    }
+  }
+}

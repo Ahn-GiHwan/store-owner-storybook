@@ -1,0 +1,6 @@
+query findUnmaskedLoginId($conditions: FindUnmaskedLoginIdsConditions!) {
+  findUnmaskedLoginId(conditions: $conditions) {
+    loginId
+    lastLoginAt
+  }
+}

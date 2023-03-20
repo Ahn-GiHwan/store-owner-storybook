@@ -1,0 +1,19 @@
+query deliveryCondition($storeId: Int!, $deliveryAgencyId: String) {
+  deliveryCondition(storeId: $storeId, deliveryAgencyId: $deliveryAgencyId) {
+    deliveryAgencyId
+    delayTime
+    totalExtraCharge
+    extraCharges {
+      dataType
+      type
+      charge
+    }
+    pickupMinimumAt
+    isDeliveryPossible
+    reason
+    error {
+      errorCode
+      message
+    }
+  }
+}

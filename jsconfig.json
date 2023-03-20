@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@composables/*": ["./src/composables/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@graphql/*": ["./src/graphql/*"],
+      "@locales/*": ["./src/locales/*"],
+      "@plugins/*": ["./src/plugins/*"],
+      "@router/*": ["./src/router/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@views/*": ["./src/views/*"],
+      "@/*": ["./src/*"]
+    }
+  }
+}

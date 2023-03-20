@@ -1,0 +1,57 @@
+
+// 글자 기본 속성
+$font-family-root: 'Spoqa Han Sans NEO', sans-serif;
+$font-size-root: 16px;
+$font-weight-root: 400;
+$line-height-root: 20px;
+$border-radius-root: 4px;
+
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-700: 700;
+
+// 사용자 정의 변수
+$color-primary : #0072FF;
+$color-disabled : #EEEEEE;
+$color-gray-eb: #EBEBEB;
+$color-gray-f5 : #F5F5F5;
+$color-gray-bd : #BDBDBD;
+$color-gray-99 : #999999;
+$color-gray-75 : #757575;
+$color-gray-66 : #666666;
+$color-gray-cb : #cbcbcb;
+$color-gray-ee : #eeeeee;
+$color-gray-ff : #ffffff;
+$color-gray-61 : #616161;
+
+$color-red-ff : #FF5252;
+$color-red-e5 : #E53935;
+$color-red-ff4 : #FF4545;
+$color-red-ff1 : #FF1744;
+
+$color-pink-e53 : #FFEBEB;
+$color-green-25b: #25B752;
+$color-black-11 : #111111;
+
+// 글자 크기
+$font-size-body: 1.4rem;
+$font-size-xxs: 1rem;
+$font-size-xs: 1.2rem;
+$font-size-sm: 1.4rem;
+$font-size-lg: 1.6rem;
+$font-size-xl: 1.8rem;
+$font-size-20: 2rem;
+$font-size-22: 2.2rem;
+$font-size-24: 2.4rem;
+
+// 해상도
+$breakpoint-mobile: 160px;
+$breakpoint-tablet: 484px;
+
+// 텍스트 필드
+$text-field-medium: 5.2rem;
+$text-field-large: 6.4rem;
+
+// 버튼 크기
+$button-size-medium: 5.2rem;
+$button-size-large: 6.4rem;

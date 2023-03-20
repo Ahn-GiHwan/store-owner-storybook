@@ -1,0 +1,18 @@
+mutation loginUserForMobile($loginId: String!, $password: String!, $rememberMe: Boolean) {
+  loginUserForMobile(loginId: $loginId, password: $password, rememberMe: $rememberMe) {
+    userId
+    loginId
+    name
+    phone
+    role
+    accessToken
+    isPasswordChangeRequired
+    createdAt
+    userTermsAgreements {
+      termsAndPolicyType
+      isAgree
+      createdAt
+      responseMethod
+    }
+  }
+}

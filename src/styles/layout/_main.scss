@@ -1,0 +1,15 @@
+.v-main {
+  background: $color-gray-f5;
+}
+.content {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  max-width: $breakpoint-tablet;
+  background: white;
+  white-space: pre-line;
+}
+
+.view-page {
+  margin: 1.6rem;
+}

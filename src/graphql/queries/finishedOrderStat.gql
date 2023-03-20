@@ -1,0 +1,66 @@
+query finishedOrderStat($storeId: Int!, $startAt: Float!, $endAt: Float!) {
+  finishedOrderStat(storeId: $storeId, startAt: $startAt, endAt: $endAt) {
+    deliveryOrder {
+      countOrder
+      countPostpaidPrice
+      sumPostpaidPrice
+      countPaymentCardPrice
+      sumPaymentCardPrice
+      countPaymentCashPrice
+      sumPaymentCashPrice
+      countPrepaidPrice
+      sumPrepaidPrice
+      countPaymentMixedPrice
+      sumPaymentMixedPrice
+      sumActualPayPrice
+      countTaxFreePayPrice
+      sumTaxFreePayPrice
+    }
+    packingOrder {
+      countOrder
+      countPostpaidPrice
+      sumPostpaidPrice
+      countPrepaidPrice
+      sumPrepaidPrice
+      countPaymentMixedPrice
+      sumPaymentMixedPrice
+      sumActualPayPrice
+      countTaxFreePayPrice
+      sumTaxFreePayPrice
+    }
+    hallOrder {
+      countOrder
+      countPostpaidPrice
+      sumPostpaidPrice
+      countPrepaidPrice
+      sumPrepaidPrice
+      countPaymentMixedPrice
+      sumPaymentMixedPrice
+      sumActualPayPrice
+      countTaxFreePayPrice
+      sumTaxFreePayPrice
+    }
+    deliveryPriceInfo {
+      countDeliveryPrice
+      sumDeliveryPrice
+      countExtraCharge
+      sumExtraCharge
+      extraCharges {
+        chargeType
+        count
+        charge
+      }
+      sumVATPrice
+      sumTotalDeliveryPrice
+      countCommission
+      sumCommission
+      countMaintenanceFee
+      sumMaintenanceFee
+    }
+    totalInfo {
+      totalPaymentPrice
+      totalDeliveryPrice
+      totalRevenue
+    }
+  }
+}

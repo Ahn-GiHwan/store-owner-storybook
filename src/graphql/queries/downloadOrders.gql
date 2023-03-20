@@ -1,0 +1,5 @@
+query downloadOrders($conditions: DownloadOrdersConditions!) {
+   downloadOrders(conditions: $conditions) {
+   	downloadFileName
+  }
+}

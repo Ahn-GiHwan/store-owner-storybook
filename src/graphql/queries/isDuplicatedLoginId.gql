@@ -1,0 +1,3 @@
+query isDuplicatedLoginId($conditions: DuplicatedLoginIdConditions!) {
+  isDuplicatedLoginId(conditions: $conditions)
+}

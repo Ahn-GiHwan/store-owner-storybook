@@ -1,0 +1,20 @@
+fragment payment on Payment {
+  paymentId
+  orderId
+  storeId
+  deliveryAgencyId
+  deliveryId
+  paymentMethod
+  cardCompany
+  cardNumber
+  vanCompany
+  approvalNumber
+  approvalAt
+  instalment
+  charge
+  canceledAt
+  cancelReason
+  isCanceled
+  createdAt
+  updatedAt
+}

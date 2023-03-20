@@ -1,0 +1,8 @@
+fragment reorderRelation on ReorderRelation {
+  orderId
+  parentOrderId
+  reorderType
+  reorderReason
+  createdAt
+  updatedAt
+}

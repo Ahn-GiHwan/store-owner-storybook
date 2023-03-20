@@ -1,0 +1,16 @@
+query orderAgencies {
+  orderAgencies {
+    orderAgencyId
+    orderAgencyName
+    orderAgencyRejectTime
+    orderAgencyPhone
+    isClientMappable
+    isClientOrderCancelable
+    isManageStoreOnOff
+    isManageStoreProductSales
+    reservedOrderDisplayTime
+    orderAgencyType
+    createdAt
+    updatedAt
+  }
+}

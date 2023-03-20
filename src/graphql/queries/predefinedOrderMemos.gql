@@ -1,0 +1,11 @@
+query predefinedOrderMemos($conditions: PredefinedOrderMemosConditions) {
+  predefinedOrderMemos(conditions: $conditions) {
+    predefinedOrderMemoId
+    storeId
+    content
+    sort
+    isUntact
+    createdAt
+    updatedAt
+  }
+}

@@ -1,0 +1,6 @@
+mutation requestIdentityVerificationAddress($conditions: RequestIdentityVerificationAddressConditions!) {
+  requestIdentityVerificationAddress(conditions: $conditions) {
+    identityVerificationAddress
+    identityVerificationId
+  }
+}

@@ -1,0 +1,9 @@
+mutation createStoreUser($storeId: Int!) {
+  createStoreUser(storeId: $storeId) {
+    userId
+    storeId
+    status
+    createdAt
+    updatedAt
+  }
+}
