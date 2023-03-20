@@ -3,7 +3,9 @@
   "version": "1.0.9",
   "private": true,
   "description": "바로고 사장님 모바일 클라이언트",
-  "author": "사장님플랫폼팀",
+  "author": {
+    "name": "사장님플랫폼팀"
+  },
   "scripts": {
     "build:development": "vite build --mode development && rimraf dist/**/*.js.map",
     "build:qc": "vite build --mode qc && rimraf dist/**/*.js.map",
@@ -15,7 +17,8 @@
     "serve:local": "vite --port 5100 --mode localhost",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=7da1b5b41986"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
@@ -76,5 +79,7 @@
     "vite-plugin-vuetify": "^1.0.0-alpha.14",
     "vue-cli-plugin-vuetify": "~2.5.1",
     "vue-loader": "^16.8.3"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "store_owner_mobile@1.0.9"
 }
